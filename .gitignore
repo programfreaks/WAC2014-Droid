@@ -1,0 +1,17 @@
+# Build Folders (you can keep bin if you'd like, to store dlls and pdbs)
+bin
+obj
+
+# mstest test results
+TestResults
+
+.DS_Store
+
+*.userprefs
+
+*.pidb
+
+*.suo
+
+*/Resource.Designer.cs
+*/*/Resource.Designer.cs

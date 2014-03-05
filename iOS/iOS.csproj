@@ -1,0 +1,206 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{EFAEF3CA-CBCF-49E2-A52A-069372D79667}</ProjectGuid>
+    <ProjectTypeGuids>{6BC8ED88-2882-458C-8E55-DFD12B67127B};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>MonkeySpace</RootNamespace>
+    <ReleaseVersion>1.0</ReleaseVersion>
+    <AssemblyName>MonkeySpace</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>False</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Debug</OutputPath>
+    <DefineConstants>DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <MtouchLink>None</MtouchLink>
+    <MtouchDebug>True</MtouchDebug>
+    <MtouchI18n />
+    <MtouchArch>ARMv7</MtouchArch>
+    <AssemblyName>MonkeySpace</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
+    <DebugType>none</DebugType>
+    <Optimize>False</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <MtouchI18n />
+    <MtouchSdkVersion>6.1</MtouchSdkVersion>
+    <AssemblyName>MonkeySpace</AssemblyName>
+    <MtouchArch>ARMv7</MtouchArch>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>False</Optimize>
+    <OutputPath>bin\iPhone\Debug</OutputPath>
+    <DefineConstants>DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <MtouchDebug>True</MtouchDebug>
+    <MtouchI18n />
+    <MtouchSdkVersion>6.1</MtouchSdkVersion>
+    <IpaPackageName />
+    <CrashReportingApiKey />
+    <AssemblyName>Monospace11</AssemblyName>
+    <MtouchArch>ARMv7</MtouchArch>
+    <CodesignProvision>641D8175-37A9-476E-BFF2-E97742AE50CF</CodesignProvision>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
+    <DebugType>none</DebugType>
+    <Optimize>False</Optimize>
+    <OutputPath>bin\iPhone\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <MtouchI18n />
+    <MtouchSdkVersion>6.1</MtouchSdkVersion>
+    <AssemblyName>Monospace11</AssemblyName>
+    <MtouchArch>ARMv7</MtouchArch>
+    <CodesignProvision>7893F4C1-43B6-493B-8A6F-923B67013DE1</CodesignProvision>
+    <IpaPackageName />
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Distribution|iPhone' ">
+    <DebugType>none</DebugType>
+    <Optimize>False</Optimize>
+    <OutputPath>bin\iPhone\Distribution</OutputPath>
+    <WarningLevel>4</WarningLevel>
+    <CodesignKey>iPhone Distribution</CodesignKey>
+    <MtouchI18n />
+    <MtouchSdkVersion>6.1</MtouchSdkVersion>
+    <AssemblyName>Monospace11</AssemblyName>
+    <MtouchArch>ARMv7</MtouchArch>
+    <IpaPackageName />
+    <CrashReportingApiKey />
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <CodesignProvision>03AB8056-620F-4937-B83B-F5D404F03C53</CodesignProvision>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="monotouch" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="MonoTouch.Dialog-1" />
+    <Reference Include="System.Json" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.MonoTouch.CSharp.targets" />
+  <ItemGroup>
+    <Compile Include="AppDelegate.cs" />
+    <Compile Include="TabSpeakers\SpeakerBioViewController.cs" />
+    <Compile Include="TabSpeakers\SpeakersViewController.cs" />
+    <Compile Include="TabMap\MapFlipViewController.cs" />
+    <Compile Include="TabMap\MapHelper.cs" />
+    <Compile Include="TabMap\MapLocationViewController.cs" />
+    <Compile Include="TabMap\MapViewController.cs" />
+    <Compile Include="TabSessions\SessionViewController.cs" />
+    <Compile Include="TabSessions\TagsViewController.cs" />
+    <Compile Include="TabAbout\AboutViewController.cs" />
+    <Compile Include="TabFavorites\FavoritesViewController.cs" />
+    <Compile Include="..\Core\ObjectModel\ObjectExtensions.cs">
+      <Link>ApplicationLayer\ObjectExtensions.cs</Link>
+    </Compile>
+    <Compile Include="UserInterface\TableViewControllerBase.cs" />
+    <Compile Include="UserInterface\WebViewController.cs" />
+    <Compile Include="UserInterface\WebViewControllerBase.cs" />
+    <Compile Include="..\Core\ObjectModel\ConferenceInfo.cs">
+      <Link>Core\ObjectModel\ConferenceInfo.cs</Link>
+    </Compile>
+    <Compile Include="Core\ObjectModel\Speaker.cs" />
+    <Compile Include="Core\ObjectModel\Session.cs" />
+    <Compile Include="Core\ObjectModel\ConferenceManager.cs" />
+    <Compile Include="Core\ObjectModel\MapLocation.cs" />
+    <Compile Include="..\Core\Database\Database.cs">
+      <Link>Core\SessionDatabase\Database.cs</Link>
+    </Compile>
+    <Compile Include="..\Core\Database\SQLite.cs">
+      <Link>Core\SessionDatabase\SQLite.cs</Link>
+    </Compile>
+    <Compile Include="TabPassKit\PassKitViewController.cs" />
+    <Compile Include="UserInterface\CustomFlyoutNavigationController.cs" />
+    <Compile Include="Component_FlyoutNavigation\FlyoutNavigationController.cs" />
+    <Compile Include="Component_FlyoutNavigation\OpenMenuGestureRecognizer.cs" />
+    <Compile Include="TabHome\HomeViewController.cs" />
+    <Compile Include="UserInterface\CustomRootElement.cs" />
+    <Compile Include="UserInterface\CustomDialogViewController.cs" />
+    <Compile Include="UserInterface\SessionElement.cs" />
+    <Compile Include="..\Core\ObjectModel\Constants.cs">
+      <Link>Core\ObjectModel\Constants.cs</Link>
+    </Compile>
+    <Compile Include="TabSpeakers\SpeakersCollectionCell.cs" />
+    <Compile Include="TabSpeakers\SpeakersCollectionViewController.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="TabSessions\" />
+    <Folder Include="TabSpeakers\" />
+    <Folder Include="TabMap\" />
+    <Folder Include="Images\" />
+    <Folder Include="TabAbout\" />
+    <Folder Include="TabFavorites\" />
+    <Folder Include="ApplicationLayer\" />
+    <Folder Include="UserInterface\" />
+    <Folder Include="Resources\" />
+    <Folder Include="Core\" />
+    <Folder Include="Core\SessionDatabase\" />
+    <Folder Include="TabPassKit\" />
+    <Folder Include="Component_FlyoutNavigation\" />
+    <Folder Include="TabHome\" />
+    <Folder Include="Resources\About\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Info.plist" />
+    <None Include="Entitlements.plist" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Images\tabspeaker.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\favorite.png" />
+    <Content Include="Images\favorited.png" />
+    <Content Include="Images\surprise.png" />
+    <Content Include="..\Core\Data\sessions.json">
+      <Link>sessions.json</Link>
+    </Content>
+    <Content Include="Background.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Tweet.png" />
+    <Content Include="Images\Tweet%402x.png" />
+    <Content Include="Images\NoTicketSlash.png" />
+    <Content Include="Images\NoTicketSlash%402x.png" />
+    <Content Include="Images\Monkey.png" />
+    <Content Include="Images\Monkey%402x.png" />
+    <Content Include="Images\TicketIcon.png" />
+    <Content Include="Images\TicketIcon%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Default.png" />
+    <BundleResource Include="Resources\icon_57.png" />
+    <BundleResource Include="Resources\icon_114.png" />
+    <BundleResource Include="Resources\Default%402x.png" />
+    <BundleResource Include="Resources\icon_29.png" />
+    <BundleResource Include="Resources\icon_50.png" />
+    <BundleResource Include="Resources\icon_58.png" />
+    <BundleResource Include="Resources\icon_72.png" />
+    <BundleResource Include="Resources\Default-568h%402x.png" />
+    <BundleResource Include="Images\slideout.png" />
+    <BundleResource Include="Images\Background-Party.png" />
+    <BundleResource Include="Images\113-navigation.png" />
+    <BundleResource Include="Images\Background.png" />
+    <BundleResource Include="Resources\About\Default.html" />
+    <BundleResource Include="Images\avatar.png" />
+    <BundleResource Include="Images\avatar%402x.png" />
+    <BundleResource Include="Images\113-navigation%402x.png" />
+  </ItemGroup>
+</Project>
