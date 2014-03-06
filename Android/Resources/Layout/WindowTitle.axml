@@ -1,19 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/headerlayout"
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
-    android:background="#ffffff">
-
-  <ImageView
-      android:id="@+id/header"
-      android:src="@drawable/windowtitle"
-      android:layout_width="600px"
-      android:layout_height="50px"
-      android:layout_alignParentLeft="true"
-      android:layout_alignParentTop="true"
-      android:layout_centerVertical="true"
-  />
-
+    android:background="#0072c6">
+    <ImageView
+        android:id="@+id/header"
+        android:src="@drawable/azurelogo"
+        android:layout_width="250px"
+        android:layout_height="50px"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
+        android:minHeight="50px"
+        android:paddingTop="10px"
+        android:paddingBottom="10px" />
 </RelativeLayout>

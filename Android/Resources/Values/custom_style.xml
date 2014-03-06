@@ -8,4 +8,9 @@
     <item name="android:windowTitleBackgroundStyle">@style/CustomWindowTitleBackground</item>
     <item name="android:windowContentOverlay">@null</item>
   </style>
+
+  <style name="Theme.Splash" parent="android:Theme">
+    <item name="android:windowBackground">@drawable/azurelogo</item>
+    <item name="android:windowNoTitle">true</item>
+  </style>
 </resources>

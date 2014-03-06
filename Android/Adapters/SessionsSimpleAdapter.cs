@@ -31,7 +31,8 @@ namespace MonkeySpace
             var row = sessions.ElementAt(position);
 
             view.FindViewById<TextView>(Resource.Id.Title).Text = row.Title;
-            
+            view.FindViewById<TextView>(Resource.Id.Time).Text = row.DateTimeDisplay;
+            view.FindViewById<TextView>(Resource.Id.Room).Text = row.LocationDisplay;
             return view;
         }
 

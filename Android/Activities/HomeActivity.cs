@@ -13,7 +13,7 @@ using AzureConf;
 namespace MonkeySpace
 {
     [Preserve]
-    [Activity(Label = "MonkeySpace", MainLauncher = true, Icon="@drawable/icon")]
+    [Activity(Label = "Azure Conference 2014", MainLauncher = true, Icon = "@drawable/windows_logo")]
     public class HomeActivity : BaseActivity
     {
         ListView _list;
@@ -29,8 +29,8 @@ namespace MonkeySpace
 
             _schedule = Conf.Current.ScheduleItems;
 
-            _list = FindViewById<ListView>(Resource.Id.List);
-			_list.ItemClick += new EventHandler<AdapterView.ItemClickEventArgs>(_list_ItemClick);
+            //_list = FindViewById<ListView>(Resource.Id.List);
+            //_list.ItemClick += new EventHandler<AdapterView.ItemClickEventArgs>(_list_ItemClick);
         }
         protected override void OnResume()
         {
@@ -40,15 +40,15 @@ namespace MonkeySpace
         private void refreshSchedule()
         {
             _schedule = Conf.Current.ScheduleItems;
-            _list.Adapter = new HomeAdapter(this, _schedule);
+            //_list.Adapter = new HomeAdapter(this, _schedule);
         }
 
-		private void _list_ItemClick(object sender, AdapterView.ItemClickEventArgs e)
+        private void _list_ItemClick(object sender, AdapterView.ItemClickEventArgs e)
         {
             var bm = ((HomeAdapter)_list.Adapter).GetRow(e.Position);
             var intent = new Intent();
             switch (bm.SortOrder)
-            { 
+            {
                 case 0:
                     if (!String.IsNullOrEmpty(bm.Day))
                     {   // use date
@@ -71,7 +71,7 @@ namespace MonkeySpace
                 case 2:
                     // for future use
                     break;
-            }     
+            }
         }
     }
 }

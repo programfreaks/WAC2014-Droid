@@ -1,24 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
+    android:background="#000000"
+    android:textColor="#ffffff"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent">
-
-  <TextView
-     android:text="@string/speakers"
-     android:textSize="30dp"
-     android:textColor="@color/accent"
-     android:layout_width="fill_parent"
-     android:layout_height="wrap_content"
-     android:paddingLeft="10dip"
-     />
-  
-  <!-- SPEAKERS LIST -->
-  <ListView
+    <TextView
+        android:text="@string/speakers"
+        android:textSize="40dp"
+        android:textColor="@color/white"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dip" />
+<!-- SPEAKERS LIST -->
+    <ListView
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:dividerHeight="1px"
-        android:id="@+id/List">
-  </ListView>
-  
+        android:id="@+id/List" />
 </LinearLayout>

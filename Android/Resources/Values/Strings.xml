@@ -1,8 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="whatson">What\&apos;s On</string>
-    <string name="speakers">Speakers</string>
-    <string name="sessions">Sessions</string>
-    <string name="favorites">Favorites</string>
-    <string name="ApplicationName">MonkeySpace</string>
+  <string name="whatson">What\&apos;s On</string>
+  <string name="speakers">speakers</string>
+  <string name="sessions">sessions</string>
+  <string name="favorites">favorites</string>
+  <string name="sessiondetail">session detail</string>
+  <string name="ApplicationName">Azure Conference</string>
+  <string name="about">about</string>
+  <string name="windowsazure">Windows Azure</string>
+  <string name="windowsazureconf">Windows Azure Conference 2014</string>
+  <string name="winazuretagline">The future lies in the cloud. Accelerate with Windows Azure.</string>
+  <string name="aboutDescription">Explore limitless possibilities and vast opportunities made possible by Windows Azure, at India\'s largest cloud conference. It is the perfect platform to meet partners, share insights, and discover growth opportunities.</string>
+  <string name="aboutMessage">Please select an option from the menu to continue.</string>
 </resources>

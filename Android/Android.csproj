@@ -98,64 +98,63 @@
     <Compile Include="Adapters\SessionsAdapter.cs" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\Layout\WindowTitle.axml">
+    <AndroidResource Include="Resources\layout\WindowTitle.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
-    <AndroidResource Include="Resources\Layout\Sessions.axml">
+    <AndroidResource Include="Resources\layout\Sessions.axml">
       <SubType>AndroidResource</SubType>
     </AndroidResource>
-    <AndroidResource Include="Resources\Layout\Speakers.axml">
+    <AndroidResource Include="Resources\layout\Speakers.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
-    <AndroidResource Include="Resources\Layout\Favourites.axml">
+    <AndroidResource Include="Resources\layout\Favourites.axml">
       <SubType>AndroidResource</SubType>
     </AndroidResource>
-    <AndroidResource Include="Resources\Layout\HomeItem.axml">
+    <AndroidResource Include="Resources\layout\HomeItem.axml">
       <SubType>AndroidResource</SubType>
     </AndroidResource>
-    <AndroidResource Include="Resources\Layout\SpeakersItem.axml">
+    <AndroidResource Include="Resources\layout\SpeakersItem.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
-    <AndroidResource Include="Resources\Layout\Speaker.axml">
+    <AndroidResource Include="Resources\layout\Speaker.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
-    <AndroidResource Include="Resources\Layout\Session.axml">
+    <AndroidResource Include="Resources\layout\Session.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
-    <AndroidResource Include="Resources\Layout\FavouritesItem.axml">
+    <AndroidResource Include="Resources\layout\FavouritesItem.axml">
       <SubType>AndroidResource</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\raw\sessions.json" />
-    <AndroidResource Include="Resources\Layout\SessionsItem.axml">
+    <AndroidResource Include="Resources\layout\SessionsItem.axml">
       <SubType>AndroidResource</SubType>
     </AndroidResource>
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\Drawable\map.png" />
-    <AndroidResource Include="Resources\Drawable\map_2x.png" />
-    <AndroidResource Include="Resources\Drawable\bullhorn.png" />
-    <AndroidResource Include="Resources\Drawable\bullhorn_2x.png" />
-    <AndroidResource Include="Resources\Drawable\star.png" />
-    <AndroidResource Include="Resources\Drawable\star_2x.png" />
-    <AndroidResource Include="Resources\Drawable\feed.png" />
-    <AndroidResource Include="Resources\Drawable\feed_2x.png" />
-    <AndroidResource Include="Resources\Drawable\microphone.png" />
-    <AndroidResource Include="Resources\Drawable\microphone_2x.png" />
-    <AndroidResource Include="Resources\Drawable\calendar.png" />
-    <AndroidResource Include="Resources\Drawable\calendar_2x.png" />
-    <AndroidResource Include="Resources\Layout\Home.axml" />
+    <AndroidResource Include="Resources\drawable\map.png" />
+    <AndroidResource Include="Resources\drawable\map_2x.png" />
+    <AndroidResource Include="Resources\drawable\bullhorn.png" />
+    <AndroidResource Include="Resources\drawable\bullhorn_2x.png" />
+    <AndroidResource Include="Resources\drawable\star.png" />
+    <AndroidResource Include="Resources\drawable\star_2x.png" />
+    <AndroidResource Include="Resources\drawable\feed.png" />
+    <AndroidResource Include="Resources\drawable\feed_2x.png" />
+    <AndroidResource Include="Resources\drawable\microphone.png" />
+    <AndroidResource Include="Resources\drawable\microphone_2x.png" />
+    <AndroidResource Include="Resources\drawable\calendar.png" />
+    <AndroidResource Include="Resources\drawable\calendar_2x.png" />
+    <AndroidResource Include="Resources\layout\Home.axml" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\Values\Strings.xml">
+    <AndroidResource Include="Resources\values\Strings.xml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\Drawable\icon.png" />
+    <AndroidResource Include="Resources\drawable\icon.png" />
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
-    <AndroidResource Include="Resources\Values\custom_style.xml">
+    <AndroidResource Include="Resources\values\custom_style.xml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>
@@ -163,14 +162,16 @@
     <Content Include="Properties\AndroidManifest.xml">
       <SubType>Designer</SubType>
     </Content>
-    <AndroidResource Include="Resources\Drawable\WindowTitle.png" />
-    <AndroidResource Include="Resources\Drawable-hdpi\WindowTitle.png" />
-    <AndroidResource Include="Resources\Drawable-mdpi\WindowTitle.png" />
-    <AndroidResource Include="Resources\Drawable-ldpi\WindowTitle.png" />
-    <AndroidResource Include="Resources\Drawable-hdpi\icon.png" />
-    <AndroidResource Include="Resources\Drawable-ldpi\icon.png" />
-    <AndroidResource Include="Resources\Drawable-mdpi\icon.png" />
-    <AndroidResource Include="Resources\Values\Colors.xml" />
+    <AndroidResource Include="Resources\drawable\WindowTitle.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\WindowTitle.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\WindowTitle.png" />
+    <AndroidResource Include="Resources\drawable-ldpi\WindowTitle.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\icon.png" />
+    <AndroidResource Include="Resources\drawable-ldpi\icon.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\icon.png" />
+    <AndroidResource Include="Resources\values\Colors.xml" />
+    <AndroidResource Include="Resources\drawable\azurelogo.png" />
+    <AndroidResource Include="Resources\drawable\windows_logo.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
@@ -180,5 +181,4 @@
   <Target Name="AfterBuild">
   </Target>
   -->
-  <ItemGroup />
 </Project>

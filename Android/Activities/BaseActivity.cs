@@ -19,7 +19,7 @@ namespace MonkeySpace
         /// </summary>
         public override bool OnCreateOptionsMenu(IMenu menu)
         {
-            var item = menu.Add(Android.Views.MenuConsts.None, 1, 1, new Java.Lang.String("What's On"));
+            var item = menu.Add(Android.Views.MenuConsts.None, 1, 1, new Java.Lang.String("About"));
             item.SetIcon(Resource.Drawable.calendar);
 
             item = menu.Add(Android.Views.MenuConsts.None, 2, 2, new Java.Lang.String("Speakers"));  // HACK: todo - add 'using' statement around Java.Lang.Strings for GC (as per novell hint)
@@ -28,7 +28,7 @@ namespace MonkeySpace
             item = menu.Add(Android.Views.MenuConsts.None, 3, 3, new Java.Lang.String("Sessions"));
             item.SetIcon(Resource.Drawable.bullhorn);
 
-            item = menu.Add(Android.Views.MenuConsts.None, 4, 4, new Java.Lang.String("My Schedule"));
+            item = menu.Add(Android.Views.MenuConsts.None, 4, 4, new Java.Lang.String("Favorites"));
             item.SetIcon(Resource.Drawable.star);
 
             return true;
@@ -39,7 +39,7 @@ namespace MonkeySpace
             var intent = new Intent();
             switch (item.TitleFormatted.ToString())
             {
-                case "What's On":
+                case "About":
 
                     intent.SetClass(this, typeof(HomeActivity));
                     intent.AddFlags(ActivityFlags.ClearTop);            // http://developer.android.com/reference/android/content/Intent.html#FLAG_ACTIVITY_CLEAR_TOP
@@ -60,7 +60,7 @@ namespace MonkeySpace
                     StartActivity(intent);
                     return true;
 
-                case "My Schedule":
+                case "Favorites":
 
                     intent.SetClass(this, typeof(FavouritesActivity));
                     StartActivity(intent);

@@ -1,16 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
+    android:background="#000000"
+    android:textColor="#ffffff"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent">
     <TextView
-        android:text="@string/whatson"
-        android:textSize="30dp"
-        android:textColor="@color/accent"
+        android:text="@string/about"
+        android:textSize="40dp"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:paddingLeft="10dip" />
+        android:paddingLeft="10dip"
+        android:textColor="@color/white" />
 <!-- HOME SCHEDULE LIST -->
+    <TextView
+        android:text="@string/windowsazureconf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView1"
+        android:textSize="20dip"
+        android:paddingLeft="10dip"
+        android:textColor="@color/azure"
+        android:layout_marginTop="10dip" />
+    <TextView
+        android:text="@string/winazuretagline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2"
+        android:paddingLeft="10dip"
+        android:textColor="@color/white"
+        android:textSize="15dip" />
+    <TextView
+        android:text="@string/aboutDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView3"
+        android:textColor="@color/white"
+        android:padding="10dip" />
+    <TextView
+        android:text="@string/aboutMessage"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/textView3"
+        android:textColor="@color/white"
+        android:padding="10dip"
+        android:layout_marginTop="20dip" />
     <ListView
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"

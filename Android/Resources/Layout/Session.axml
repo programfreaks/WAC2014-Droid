@@ -4,64 +4,109 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:fillViewport="true"
+    android:background="#000000"
+    android:textColor="#ffffff"
     android:padding="0dip">
-  
-  <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-      android:orientation="vertical"
-      android:layout_width="fill_parent"
-      android:layout_height="fill_parent"
-      android:paddingLeft="10dip"
-      android:paddingRight="5dip">
-
-    <!-- SESSION VIEW -->
-
-    <TextView
-         android:id="@+id/Title"
-         android:layout_width="fill_parent"
-         android:layout_height="wrap_content"
-         android:textSize="30dp"
-         android:textColor="@color/accent" />
-
-    <TextView
-      android:id="@+id/SpeakerList"
-      android:textColor="#808080"
-      android:layout_width="fill_parent"
-      android:layout_height="wrap_content" />
-
     <LinearLayout
-     android:orientation="horizontal"
-     android:layout_width="fill_parent"
-     android:layout_height="wrap_content">
-      <LinearLayout
-       android:orientation="vertical"
-       android:layout_width="wrap_content"
-       android:layout_height="wrap_content">
-        <TextView
-          android:id="@+id/Room"
-          android:textColor="#808080"
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content" />
-        <TextView
-          android:id="@+id/DateTimeDisplay"
-          android:textColor="#808080"
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content" />
-      </LinearLayout>
-      <Button 
-          android:id="@+id/FavouriteButton"
-          android:text="Add Favorite"
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-      />
-    </LinearLayout>
-    
-      <TextView
-        android:id="@+id/Brief"
+        android:orientation="vertical"
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:paddingTop="10dip"/>
-    
-      <!--TextView
+        android:layout_height="fill_parent"
+        android:paddingLeft="10dip"
+        android:paddingRight="0dip">
+    <!-- SESSION VIEW -->
+        <TextView
+            android:text="@string/sessiondetail"
+            android:textSize="40dp"
+            android:textColor="@color/white"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:text="title"
+            android:textColor="@color/azure" />
+        <TextView
+            android:id="@+id/Title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:textColor="@color/white" />
+        <TextView
+            android:id="@+id/tvSpeakerList"
+            android:textColor="@color/azure"
+            android:textSize="15dp"
+            android:text="speaker"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/SpeakerList"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tvTime"
+            android:textColor="@color/azure"
+            android:textSize="15dp"
+            android:text="time"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/DateTimeDisplay"
+            android:textSize="15dp"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tvRoom"
+            android:textSize="15dp"
+            android:textColor="@color/azure"
+            android:text="location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/Room"
+            android:textSize="15dp"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tvBrief"
+            android:textSize="15dp"
+            android:text="description"
+            android:textColor="@color/azure"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/Brief"
+            android:textSize="15dp"
+            android:textColor="@color/white"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/FavouriteButton"
+            android:text="Add Favorite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    <!--<LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+      <LinearLayout
+          android:orientation="vertical"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content">
+        
+        <TextView
+            android:id="@+id/DateTimeDisplay"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+      </LinearLayout>-->
+    </LinearLayout>
+<!--TextView
         android:text="Tags"
         android:textColor="@color/accent"
         android:layout_width="fill_parent"
@@ -70,6 +115,4 @@
         android:id="@+id/TagList"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content" /-->
-    
-  </LinearLayout>
 </ScrollView>

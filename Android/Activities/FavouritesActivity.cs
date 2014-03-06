@@ -10,7 +10,7 @@ using AzureConf;
 
 namespace MonkeySpace
 {
-    [Activity(Label = "My Schedule")]
+    [Activity(Label = "Favorites")]
     public class FavouritesActivity : BaseActivity
     {
 		List<MonkeySpace.Core.Session> _favourites;
