@@ -6,6 +6,8 @@ using System.Xml.Serialization;
 using Android.App;
 using MonkeySpace.Core;
 using AzureConf;
+using System.Net;
+using System.Text;
 
 namespace MonkeySpace
 {
@@ -53,9 +55,35 @@ namespace MonkeySpace
 
 			MonkeySpace.Core.ConferenceManager.LoadFromString(jsonString);
 
+            try
+            {
+                WebClient wc = new WebClient();
+                wc.DownloadStringCompleted += (s, e) =>
+                {
+                    var text = e.Result;
+                    string documentsPath = Environment.GetFolderPath(Environment.SpecialFolder.Personal);
+                    string localFilename = MonkeySpace.Core.ConferenceManager.JsonDataFilename;
+                    string localPath = Path.Combine(documentsPath, localFilename);
+                    File.WriteAllText(localPath, text); // writes to local storage  
+
+                };
+                wc.Encoding = Encoding.UTF8;
+                wc.DownloadStringAsync(new Uri(MonkeySpace.Core.ConferenceManager.JsonFileLocationUrl));
+               
+           
+
+            }
+            catch (Exception ex)
+            {
+                
+                //throw ex;
+            }
+            
+            
             DeserializeConferenceFile("");
 
         }
+
         // readStream is the stream you need to read
         // writeStream is the stream you want to write to
         private void ReadWriteStream(Stream readStream, Stream writeStream)
