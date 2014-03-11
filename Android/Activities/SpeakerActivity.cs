@@ -40,7 +40,7 @@ namespace MonkeySpace
                 //var num = this.BaseContext.ApplicationContext.Resources.GetIdentifier(img,"Drawable/", null);
                // var imageView = FindViewById<ImageView>(Resource.Id.speakerImageView);
 
-                imageView.SetImageResource(num);
+               // imageView.SetImageResource(num);
 				FindViewById<TextView>(Resource.Id.Name).Text = currentSpeaker.Name;
 
 				if (!String.IsNullOrEmpty(currentSpeaker.Bio))
