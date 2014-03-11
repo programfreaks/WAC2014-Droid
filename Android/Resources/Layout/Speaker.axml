@@ -14,6 +14,11 @@
         android:paddingLeft="10dip"
         android:paddingRight="5dip">
     <!-- SPEAKER VIEW -->
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/speakerImageView"
+            android:scaleType="fitCenter" />
         <TextView
             android:id="@+id/Name"
             android:layout_width="fill_parent"

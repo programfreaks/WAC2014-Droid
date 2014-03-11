@@ -151,9 +151,6 @@
     </AndroidResource>
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\icon.png" />
-  </ItemGroup>
-  <ItemGroup>
     <AndroidResource Include="Resources\values\custom_style.xml">
       <SubType>Designer</SubType>
     </AndroidResource>
@@ -166,13 +163,114 @@
     <AndroidResource Include="Resources\drawable-hdpi\WindowTitle.png" />
     <AndroidResource Include="Resources\drawable-mdpi\WindowTitle.png" />
     <AndroidResource Include="Resources\drawable-ldpi\WindowTitle.png" />
-    <AndroidResource Include="Resources\drawable-hdpi\icon.png" />
-    <AndroidResource Include="Resources\drawable-ldpi\icon.png" />
-    <AndroidResource Include="Resources\drawable-mdpi\icon.png" />
     <AndroidResource Include="Resources\values\Colors.xml" />
     <AndroidResource Include="Resources\drawable\azurelogo.png" />
     <AndroidResource Include="Resources\drawable\windows_logo.png" />
+    <AndroidResource Include="Resources\drawable-ldpi\icon.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\icon.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\icon.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\icon.png" />
+    <AndroidResource Include="Resources\drawable\icon.png" />
+    <Content Include="Resources\drawable\speakers\Abhishek.jpg" />
+    <Content Include="Resources\drawable\speakers\Angshuman.jpg" />
+    <Content Include="Resources\drawable\speakers\anirudhSingh.jpg" />
+    <Content Include="Resources\drawable\speakers\anuragSharma.jpg" />
+    <Content Include="Resources\drawable\speakers\balkrishnaHeroor.jpg" />
+    <Content Include="Resources\drawable\speakers\Bhaskar.jpg" />
+    <Content Include="Resources\drawable\speakers\bryson.jpg" />
+    <Content Include="Resources\drawable\speakers\captSourabhRanjan.jpg" />
+    <Content Include="Resources\drawable\speakers\David.jpg" />
+    <Content Include="Resources\drawable\speakers\Debarchan.jpg" />
+    <Content Include="Resources\drawable\speakers\deepthiAnantharam.jpg" />
+    <Content Include="Resources\drawable\speakers\emilVelinov.jpg" />
+    <Content Include="Resources\drawable\speakers\gandhali.jpg" />
+    <Content Include="Resources\drawable\speakers\Gaurav.jpg" />
+    <Content Include="Resources\drawable\speakers\Govind.jpg" />
+    <Content Include="Resources\drawable\speakers\janakiramMsv.jpg" />
+    <Content Include="Resources\drawable\speakers\Jaskirat.jpg" />
+    <Content Include="Resources\drawable\speakers\joseph.jpg" />
+    <Content Include="Resources\drawable\speakers\karan.jpg" />
+    <Content Include="Resources\drawable\speakers\Kaushal.jpg" />
+    <Content Include="Resources\drawable\speakers\khiladi.jpg" />
+    <Content Include="Resources\drawable\speakers\krishna.jpg" />
+    <Content Include="Resources\drawable\speakers\lakshmiKrishnamurthy.jpg" />
+    <Content Include="Resources\drawable\speakers\msAnand.jpg" />
+    <Content Include="Resources\drawable\speakers\muhammadNasiruddin.jpg" />
+    <Content Include="Resources\drawable\speakers\nauzadKapadia.jpg" />
+    <Content Include="Resources\drawable\speakers\Nayak.jpg" />
+    <Content Include="Resources\drawable\speakers\nRaja.jpg" />
+    <Content Include="Resources\drawable\speakers\pareshPatel.jpg" />
+    <Content Include="Resources\drawable\speakers\prachetaBudhwar.jpg" />
+    <Content Include="Resources\drawable\speakers\prasannaRaghavendra.jpg" />
+    <Content Include="Resources\drawable\speakers\praveen.jpg" />
+    <Content Include="Resources\drawable\speakers\Puneet.jpg" />
+    <Content Include="Resources\drawable\speakers\rajasekharanVengalil.jpg" />
+    <Content Include="Resources\drawable\speakers\Rakki.jpg" />
+    <Content Include="Resources\drawable\speakers\Rangarajan.jpg" />
+    <Content Include="Resources\drawable\speakers\sanjayNarang.jpg" />
+    <Content Include="Resources\drawable\speakers\saravanan.jpg" />
+    <Content Include="Resources\drawable\speakers\saurav.png" />
+    <Content Include="Resources\drawable\speakers\Savandeep.jpg" />
+    <Content Include="Resources\drawable\speakers\Shanshank.jpg" />
+    <Content Include="Resources\drawable\speakers\shanshankShrivastava.jpg" />
+    <Content Include="Resources\drawable\speakers\shwetaGupta.jpg" />
+    <Content Include="Resources\drawable\speakers\sujeshKodoth.jpg" />
+    <Content Include="Resources\drawable\speakers\Sunil.jpg" />
+    <Content Include="Resources\drawable\speakers\takayukiHoshino.jpg" />
+    <Content Include="Resources\drawable\speakers\Ujjwal.jpg" />
+    <Content Include="Resources\drawable\speakers\vibhor.jpg" />
+    <Content Include="Resources\drawable\speakers\vinodkumarM.jpg" />
+    <Content Include="Resources\images\speakers\Abhishek.jpg" />
+    <Content Include="Resources\images\speakers\Angshuman.jpg" />
+    <Content Include="Resources\images\speakers\anirudhSingh.jpg" />
+    <Content Include="Resources\images\speakers\anuragSharma.jpg" />
+    <Content Include="Resources\images\speakers\balkrishnaHeroor.jpg" />
+    <Content Include="Resources\images\speakers\Bhaskar.jpg" />
+    <Content Include="Resources\images\speakers\bryson.jpg" />
+    <Content Include="Resources\images\speakers\captSourabhRanjan.jpg" />
+    <Content Include="Resources\images\speakers\David.jpg" />
+    <Content Include="Resources\images\speakers\Debarchan.jpg" />
+    <Content Include="Resources\images\speakers\deepthiAnantharam.jpg" />
+    <Content Include="Resources\images\speakers\emilVelinov.jpg" />
+    <Content Include="Resources\images\speakers\gandhali.jpg" />
+    <Content Include="Resources\images\speakers\Gaurav.jpg" />
+    <Content Include="Resources\images\speakers\Govind.jpg" />
+    <Content Include="Resources\images\speakers\janakiramMsv.jpg" />
+    <Content Include="Resources\images\speakers\Jaskirat.jpg" />
+    <Content Include="Resources\images\speakers\joseph.jpg" />
+    <Content Include="Resources\images\speakers\karan.jpg" />
+    <Content Include="Resources\images\speakers\Kaushal.jpg" />
+    <Content Include="Resources\images\speakers\khiladi.jpg" />
+    <Content Include="Resources\images\speakers\krishna.jpg" />
+    <Content Include="Resources\images\speakers\lakshmiKrishnamurthy.jpg" />
+    <Content Include="Resources\images\speakers\msAnand.jpg" />
+    <Content Include="Resources\images\speakers\muhammadNasiruddin.jpg" />
+    <Content Include="Resources\images\speakers\nauzadKapadia.jpg" />
+    <Content Include="Resources\images\speakers\Nayak.jpg" />
+    <Content Include="Resources\images\speakers\nRaja.jpg" />
+    <Content Include="Resources\images\speakers\pareshPatel.jpg" />
+    <Content Include="Resources\images\speakers\prachetaBudhwar.jpg" />
+    <Content Include="Resources\images\speakers\prasannaRaghavendra.jpg" />
+    <Content Include="Resources\images\speakers\praveen.jpg" />
+    <Content Include="Resources\images\speakers\Puneet.jpg" />
+    <Content Include="Resources\images\speakers\rajasekharanVengalil.jpg" />
+    <Content Include="Resources\images\speakers\Rakki.jpg" />
+    <Content Include="Resources\images\speakers\Rangarajan.jpg" />
+    <Content Include="Resources\images\speakers\sanjayNarang.jpg" />
+    <Content Include="Resources\images\speakers\saravanan.jpg" />
+    <Content Include="Resources\images\speakers\saurav.png" />
+    <Content Include="Resources\images\speakers\Savandeep.jpg" />
+    <Content Include="Resources\images\speakers\Shanshank.jpg" />
+    <Content Include="Resources\images\speakers\shanshankShrivastava.jpg" />
+    <Content Include="Resources\images\speakers\shwetaGupta.jpg" />
+    <Content Include="Resources\images\speakers\sujeshKodoth.jpg" />
+    <Content Include="Resources\images\speakers\Sunil.jpg" />
+    <Content Include="Resources\images\speakers\takayukiHoshino.jpg" />
+    <Content Include="Resources\images\speakers\Ujjwal.jpg" />
+    <Content Include="Resources\images\speakers\vibhor.jpg" />
+    <Content Include="Resources\images\speakers\vinodkumarM.jpg" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
      Other similar extension points exist, see Microsoft.Common.targets.

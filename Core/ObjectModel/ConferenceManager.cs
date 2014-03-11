@@ -15,6 +15,8 @@ namespace MonkeySpace.Core
 	{
 		public static string JsonDataFilename = "sessions.json";
 
+        public static string JsonFileLocationUrl = "http://programfreaks.com/sessions.txt";
+
         public static Dictionary<int, Session> Sessions = new Dictionary<int, Session>();
 
 		public static Dictionary<int, Speaker> Speakers = new Dictionary<int, Speaker>();

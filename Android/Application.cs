@@ -55,29 +55,29 @@ namespace MonkeySpace
 
 			MonkeySpace.Core.ConferenceManager.LoadFromString(jsonString);
 
-            try
-            {
-                WebClient wc = new WebClient();
-                wc.DownloadStringCompleted += (s, e) =>
-                {
-                    var text = e.Result;
-                    string documentsPath = Environment.GetFolderPath(Environment.SpecialFolder.Personal);
-                    string localFilename = MonkeySpace.Core.ConferenceManager.JsonDataFilename;
-                    string localPath = Path.Combine(documentsPath, localFilename);
-                    File.WriteAllText(localPath, text); // writes to local storage  
+            //try
+            //{
+            //    WebClient wc = new WebClient();
+            //    wc.DownloadStringCompleted += (s, e) =>
+            //    {
+            //        var text = e.Result;
+            //        string documentsPath = Environment.GetFolderPath(Environment.SpecialFolder.Personal);
+            //        string localFilename = MonkeySpace.Core.ConferenceManager.JsonDataFilename;
+            //        string localPath = Path.Combine(documentsPath, localFilename);
+            //        File.WriteAllText(localPath, text); // writes to local storage  
 
-                };
-                wc.Encoding = Encoding.UTF8;
-                wc.DownloadStringAsync(new Uri(MonkeySpace.Core.ConferenceManager.JsonFileLocationUrl));
+            //    };
+            //    wc.Encoding = Encoding.UTF8;
+            //    wc.DownloadStringAsync(new Uri(MonkeySpace.Core.ConferenceManager.JsonFileLocationUrl));
                
            
 
-            }
-            catch (Exception ex)
-            {
+            //}
+            //catch (Exception ex)
+            //{
                 
-                //throw ex;
-            }
+            //    //throw ex;
+            //}
             
             
             DeserializeConferenceFile("");

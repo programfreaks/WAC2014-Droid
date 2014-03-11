@@ -23,6 +23,7 @@ namespace MonkeySpace.Core
 			TwitterHandle = json["twitterHandle"];
 			Bio = json["bio"];
 			HeadshotUrl = json["headshotUrl"];
+            Tagline = json["tagline"];
 		}
 #endif
 		public int Id { get; set; }
@@ -30,6 +31,8 @@ namespace MonkeySpace.Core
 		public string TwitterHandle {get;set;}
 		public string Bio {get;set;}
 		public string HeadshotUrl {get;set;}
+
+        public string Tagline { get; set; }
 
 		#if WINDOWS_PHONE
 		// bit of a HACK: because we're serializing and storing as XML, 

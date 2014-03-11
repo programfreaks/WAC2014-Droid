@@ -11,7 +11,8 @@ using AzureConf;
 
 namespace MonkeySpace
 {
-    [Activity(Label = "Sessions")]
+    //[Activity(Label = "Sessions")]
+    [Activity(Label = "Windows Azure Conference 2014", MainLauncher = true, Icon = "@drawable/icon")]
     public class SessionsActivity : BaseActivity
     {
         List<MonkeySpace.Core.Session> sessions;

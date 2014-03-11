@@ -13,7 +13,7 @@ using AzureConf;
 namespace MonkeySpace
 {
     [Preserve]
-    [Activity(Label = "Azure Conference 2014", MainLauncher = true, Icon = "@drawable/windows_logo")]
+    [Activity(Label = "Windows Azure Conference 2014", MainLauncher = false, Icon = "@drawable/icon")]
     public class HomeActivity : BaseActivity
     {
         ListView _list;
