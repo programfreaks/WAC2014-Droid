@@ -1,9 +1,12 @@
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using Android.App;
+using Android.Graphics.Drawables;
 using Android.Views;
 using Android.Widget;
 using AzureConf;
+using Java.IO;
 
 namespace MonkeySpace
 {
@@ -23,10 +26,30 @@ namespace MonkeySpace
             var view = (convertView
                             ?? context.LayoutInflater.Inflate(
                                     Resource.Layout.SpeakersItem, parent, false)
-                        ) as LinearLayout;
+                        ) as RelativeLayout;
             var row = speakers.ElementAt(position);
+            
+            view.FindViewById<TextView>(Resource.Id.Name).Text = row.Name;
+            view.FindViewById<TextView>(Resource.Id.Designation).Text = row.Tagline;
+            try
+            {
+                if (!string.IsNullOrEmpty(row.HeadshotUrl))
+                {
+                    var url = row.HeadshotUrl.Replace("/images/speakers/", "speakers/");
+                    var headshotDrawable = Drawable.CreateFromStream(context.Assets.Open(url), null);
+                    var img = view.FindViewById<ImageView>(Resource.Id.Image);
+                    img.SetImageDrawable(headshotDrawable);
+                }
+            }
+            catch (FileNotFoundException ex)
+            {
 
-            view.FindViewById<TextView>(Resource.Id.Title).Text = row.Name;
+                
+            }
+            catch (Exception ex)
+            {
+                
+            }
             
 
             return view;

@@ -3,6 +3,21 @@
   <string name="whatson">What\&apos;s On</string>
   <string name="speakers">speakers</string>
   <string name="sessions">sessions</string>
+  <string name="name">name</string>
+  <string name="by">by </string>
+  <string name="developedby">
+    <a href="http://www.programfreaks.com">ProgramFreaks</a>
+  </string>
+  <string name="programfreaksurl">http://www.programfreaks.com</string>
+  <string name="anubhav">Anubhav Ranjan</string>
+  <string name="kirtisagar">Kirtisagar Malshet</string>
+  <string name="anubhavlinkedin">http://www.linkedin.com/in/ranjananubhav</string>
+  <string name="anubhavtwitter">http://www.twitter.com/anubhavr05</string>
+  <string name="anubhavtwittertext">%40anubhavr05</string>
+  <string name="kirtisagarlinkedin">http://www.linkedin.com/in/kirtisagar</string>
+  <string name="kirtisagartwitter">http://www.twitter.com/kirtisagar</string>
+  <string name="kirtisagartwittertext">%40kirtisagar</string>
+  <string name="designation">designation</string>
   <string name="favorites">favorites</string>
   <string name="sessiondetail">session detail</string>
   <string name="ApplicationName">Azure Conference</string>

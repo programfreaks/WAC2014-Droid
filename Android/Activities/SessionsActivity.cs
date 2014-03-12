@@ -12,7 +12,7 @@ using AzureConf;
 namespace MonkeySpace
 {
     //[Activity(Label = "Sessions")]
-    [Activity(Label = "Windows Azure Conference 2014", MainLauncher = true, Icon = "@drawable/icon")]
+    [Activity(Label = "WAC2014", MainLauncher = true, Icon = "@drawable/icon")]
     public class SessionsActivity : BaseActivity
     {
         List<MonkeySpace.Core.Session> sessions;
@@ -22,10 +22,11 @@ namespace MonkeySpace
         {
             base.OnCreate(bundle);
 
-            RequestWindowFeature(WindowFeatures.CustomTitle); // BETTER: http://www.anddev.org/my_own_titlebar_backbutton_like_on_the_iphone-t4591.html
+            RequestWindowFeature(WindowFeatures.NoTitle); // BETTER: http://www.anddev.org/my_own_titlebar_backbutton_like_on_the_iphone-t4591.html
             SetContentView(Resource.Layout.Sessions);
-            Window.SetFeatureInt(WindowFeatures.CustomTitle, Resource.Layout.WindowTitle); // http://www.londatiga.net/it/how-to-create-custom-window-title-in-android/
-
+            //Window.SetFeatureInt(WindowFeatures.CustomTitle, Resource.Layout.WindowTitle); // http://www.londatiga.net/it/how-to-create-custom-window-title-in-android/
+            
+            //Window.SetFlags(WindowManagerFlags.Fullscreen, WindowManagerFlags.Fullscreen);
             list = FindViewById<ListView>(Resource.Id.List);
             list.ItemClick += new EventHandler<AdapterView.ItemClickEventArgs>(list_ItemClick);
 

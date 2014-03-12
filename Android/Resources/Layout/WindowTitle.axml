@@ -2,17 +2,17 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/headerlayout"
     android:layout_width="fill_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="85px"
     android:background="#0072c6">
     <ImageView
         android:id="@+id/header"
-        android:src="@drawable/azurelogo"
+        android:src="@drawable/Header"
         android:layout_width="250px"
         android:layout_height="50px"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
         android:layout_centerVertical="true"
-        android:minHeight="50px"
-        android:paddingTop="10px"
-        android:paddingBottom="10px" />
+        android:minHeight="85px"
+        android:paddingTop="2px"
+        android:paddingBottom="2px" />
 </RelativeLayout>

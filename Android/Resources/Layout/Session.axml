@@ -1,96 +1,119 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/scroller"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    android:fillViewport="true"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
     android:background="#000000"
     android:textColor="#ffffff"
-    android:padding="0dip">
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
     <LinearLayout
-        android:orientation="vertical"
+        android:id="@+id/headerlayout"
+        android:layout_width="fill_parent"
+        android:layout_height="85px"
+        android:background="#0072c6">
+        <ImageView
+            android:id="@+id/header"
+            android:src="@drawable/Header"
+            android:layout_width="450px"
+            android:layout_height="85px"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:minHeight="85px"
+            android:paddingTop="5px"
+            android:paddingBottom="5px" />
+    </LinearLayout>
+    <ScrollView
+        android:id="@+id/scroller"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        android:paddingLeft="10dip"
-        android:paddingRight="0dip">
-    <!-- SESSION VIEW -->
-        <TextView
-            android:text="@string/sessiondetail"
-            android:textSize="40dp"
-            android:textColor="@color/white"
+        android:fillViewport="true"
+        android:background="#000000"
+        android:textColor="#ffffff"
+        android:padding="0dip">
+        <LinearLayout
+            android:orientation="vertical"
             android:layout_width="fill_parent"
-            android:layout_height="wrap_content" />
-        <TextView
-            android:id="@+id/tvTitle"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:textSize="15dp"
-            android:text="title"
-            android:textColor="@color/azure" />
-        <TextView
-            android:id="@+id/Title"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:textSize="15dp"
-            android:textColor="@color/white" />
-        <TextView
-            android:id="@+id/tvSpeakerList"
-            android:textColor="@color/azure"
-            android:textSize="15dp"
-            android:text="speaker"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content" />
-        <TextView
-            android:id="@+id/SpeakerList"
-            android:textColor="@color/white"
-            android:textSize="15dp"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content" />
-        <TextView
-            android:id="@+id/tvTime"
-            android:textColor="@color/azure"
-            android:textSize="15dp"
-            android:text="time"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content" />
-        <TextView
-            android:id="@+id/DateTimeDisplay"
-            android:textSize="15dp"
-            android:textColor="@color/white"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
-        <TextView
-            android:id="@+id/tvRoom"
-            android:textSize="15dp"
-            android:textColor="@color/azure"
-            android:text="location"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
-        <TextView
-            android:id="@+id/Room"
-            android:textSize="15dp"
-            android:textColor="@color/white"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
-        <TextView
-            android:id="@+id/tvBrief"
-            android:textSize="15dp"
-            android:text="description"
-            android:textColor="@color/azure"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content" />
-        <TextView
-            android:id="@+id/Brief"
-            android:textSize="15dp"
-            android:textColor="@color/white"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content" />
-        <Button
-            android:id="@+id/FavouriteButton"
-            android:text="Add Favorite"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
-    <!--<LinearLayout
+            android:layout_height="fill_parent"
+            android:paddingLeft="10dip"
+            android:paddingRight="0dip">
+        <!-- SESSION VIEW -->
+            <TextView
+                android:text="@string/sessiondetail"
+                android:textSize="40dp"
+                android:textColor="@color/white"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:text="title"
+                android:textColor="@color/azure" />
+            <TextView
+                android:id="@+id/Title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:textColor="@color/white" />
+            <TextView
+                android:id="@+id/tvSpeakerList"
+                android:textColor="@color/azure"
+                android:textSize="15dp"
+                android:text="speaker"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/SpeakerList"
+                android:textColor="@color/white"
+                android:textSize="15dp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tvTime"
+                android:textColor="@color/azure"
+                android:textSize="15dp"
+                android:text="time"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/DateTimeDisplay"
+                android:textSize="15dp"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tvRoom"
+                android:textSize="15dp"
+                android:textColor="@color/azure"
+                android:text="location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/Room"
+                android:textSize="15dp"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tvBrief"
+                android:textSize="15dp"
+                android:text="description"
+                android:textColor="@color/azure"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/Brief"
+                android:textSize="15dp"
+                android:textColor="@color/white"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+            <Button
+                android:id="@+id/FavouriteButton"
+                android:text="Add Favorite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        <!--<LinearLayout
         android:orientation="horizontal"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content">
@@ -105,8 +128,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
       </LinearLayout>-->
-    </LinearLayout>
-<!--TextView
+        </LinearLayout>
+    <!--TextView
         android:text="Tags"
         android:textColor="@color/accent"
         android:layout_width="fill_parent"
@@ -115,4 +138,5 @@
         android:id="@+id/TagList"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content" /-->
-</ScrollView>
+    </ScrollView>
+</LinearLayout>

@@ -22,9 +22,9 @@ namespace MonkeySpace
         {
             base.OnCreate(bundle);
 
-            RequestWindowFeature(WindowFeatures.CustomTitle); // BETTER: http://www.anddev.org/my_own_titlebar_backbutton_like_on_the_iphone-t4591.html
+            RequestWindowFeature(WindowFeatures.NoTitle); // BETTER: http://www.anddev.org/my_own_titlebar_backbutton_like_on_the_iphone-t4591.html
             SetContentView(Resource.Layout.Session);
-            Window.SetFeatureInt(WindowFeatures.CustomTitle, Resource.Layout.WindowTitle); // http://www.londatiga.net/it/how-to-create-custom-window-title-in-android/
+            //Window.SetFeatureInt(WindowFeatures.CustomTitle, Resource.Layout.WindowTitle); // http://www.londatiga.net/it/how-to-create-custom-window-title-in-android/
 
             _favouriteButton = FindViewById<Button>(Resource.Id.FavouriteButton);
             _favouriteButton.Click += new EventHandler(_favouriteButton_Click);

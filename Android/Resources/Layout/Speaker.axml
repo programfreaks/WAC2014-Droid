@@ -1,46 +1,101 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/scroller"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    android:fillViewport="true"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
     android:background="#000000"
     android:textColor="#ffffff"
-    android:padding="0dip">
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
     <LinearLayout
-        android:orientation="vertical"
+        android:id="@+id/headerlayout"
+        android:layout_width="fill_parent"
+        android:layout_height="85px"
+        android:background="#0072c6">
+        <ImageView
+            android:id="@+id/header"
+            android:src="@drawable/Header"
+            android:layout_width="450px"
+            android:layout_height="85px"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:minHeight="85px"
+            android:paddingTop="5px"
+            android:paddingBottom="5px" />
+    </LinearLayout>
+    <ScrollView
+        android:id="@+id/scroller"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        android:paddingLeft="10dip"
-        android:paddingRight="5dip">
-    <!-- SPEAKER VIEW -->
-        <ImageView
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/speakerImageView"
-            android:scaleType="fitCenter" />
-        <TextView
-            android:id="@+id/Name"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:textSize="30dp"
-            android:textColor="@color/azure" />
-        <TextView
-            android:id="@+id/Bio"
-            android:textColor="#ffffff"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content" />
-    <!-- SESSIONS LIST -->
-        <TextView
-            android:text="@string/sessions"
-            android:textColor="@color/azure"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:paddingTop="10dip" />
-        <ListView
+        android:fillViewport="true"
+        android:background="#000000"
+        android:textColor="#ffffff"
+        android:padding="0dip">
+        <LinearLayout
+            android:orientation="vertical"
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
-            android:paddingBottom="10dip"
-            android:id="@+id/SessionList" />
-    </LinearLayout>
-</ScrollView>
+            android:paddingLeft="10dip"
+            android:paddingRight="5dip">
+        <!-- SPEAKER VIEW -->
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#000000"
+                android:textColor="#ffffff"
+                android:padding="8dp">
+                <ImageView
+                    android:id="@+id/speakerImageView"
+                    android:layout_width="96dp"
+                    android:layout_height="96dp"
+                    android:src="@drawable/missingprofile"
+                    android:layout_alignParentLeft="true" />
+                <LinearLayout
+                    android:id="@+id/Text"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="100dp">
+                    <TextView
+                        android:id="@+id/tvName"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/name"
+                        android:textColor="@color/azure" />
+                    <TextView
+                        android:id="@+id/Name"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#ffffff" />
+                    <TextView
+                        android:id="@+id/tvDesignation"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/designation"
+                        android:textColor="@color/azure" />
+                    <TextView
+                        android:id="@+id/Designation"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#ffffff" />
+                </LinearLayout>
+            </RelativeLayout>
+            <TextView
+                android:id="@+id/Bio"
+                android:textColor="#ffffff"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+        <!-- SESSIONS LIST -->
+            <TextView
+                android:text="@string/sessions"
+                android:textColor="@color/azure"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dip" />
+            <ListView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:paddingBottom="10dip"
+                android:id="@+id/SessionList" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

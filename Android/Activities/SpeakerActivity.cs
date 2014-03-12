@@ -4,6 +4,8 @@ using System.Linq;
 
 using Android.App;
 using Android.Content;
+using Android.Content.Res;
+using Android.Graphics.Drawables;
 using Android.OS;
 using Android.Views;
 using Android.Widget;
@@ -23,9 +25,9 @@ namespace MonkeySpace
         {
             base.OnCreate(bundle);
 
-            RequestWindowFeature(WindowFeatures.CustomTitle); // BETTER: http://www.anddev.org/my_own_titlebar_backbutton_like_on_the_iphone-t4591.html
+            RequestWindowFeature(WindowFeatures.NoTitle); // BETTER: http://www.anddev.org/my_own_titlebar_backbutton_like_on_the_iphone-t4591.html
             SetContentView(Resource.Layout.Speaker);
-            Window.SetFeatureInt(WindowFeatures.CustomTitle, Resource.Layout.WindowTitle); // http://www.londatiga.net/it/how-to-create-custom-window-title-in-android/
+            //Window.SetFeatureInt(WindowFeatures.CustomTitle, Resource.Layout.WindowTitle); // http://www.londatiga.net/it/how-to-create-custom-window-title-in-android/
 
             name = Intent.GetStringExtra("Name");
             
@@ -35,13 +37,25 @@ namespace MonkeySpace
 
 			if (currentSpeaker.Name != "")
             {
-               
-                //var img = currentSpeaker.HeadshotUrl.Replace("/", "@drawable/");
-                //var num = this.BaseContext.ApplicationContext.Resources.GetIdentifier(img,"Drawable/", null);
-               // var imageView = FindViewById<ImageView>(Resource.Id.speakerImageView);
+                try
+                {
+                    if (!string.IsNullOrEmpty(currentSpeaker.HeadshotUrl))
+                    {
+                        var url = currentSpeaker.HeadshotUrl.Replace("/images/speakers/", "speakers/");
+                        var headshotDrawable = Drawable.CreateFromStream(ApplicationContext.Assets.Open(url), null);
+                        //var num = this.BaseContext.ApplicationContext.Resources.GetIdentifier(img, "Drawable/", null);
 
-               // imageView.SetImageResource(num);
+                        var imageView = FindViewById<ImageView>(Resource.Id.speakerImageView);
+                        imageView.SetImageDrawable(headshotDrawable);
+                    }
+                }
+                catch (Exception ex)
+                {
+
+                }
+                
 				FindViewById<TextView>(Resource.Id.Name).Text = currentSpeaker.Name;
+                FindViewById<TextView>(Resource.Id.Designation).Text = currentSpeaker.Tagline;
 
 				if (!String.IsNullOrEmpty(currentSpeaker.Bio))
 					FindViewById<TextView>(Resource.Id.Bio).Text = currentSpeaker.Bio;

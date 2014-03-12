@@ -21,9 +21,9 @@ namespace MonkeySpace
         {
             base.OnCreate(bundle);
 
-            RequestWindowFeature(WindowFeatures.CustomTitle); // BETTER: http://www.anddev.org/my_own_titlebar_backbutton_like_on_the_iphone-t4591.html
+            RequestWindowFeature(WindowFeatures.NoTitle); // BETTER: http://www.anddev.org/my_own_titlebar_backbutton_like_on_the_iphone-t4591.html
             SetContentView(Resource.Layout.Speakers);
-            Window.SetFeatureInt(WindowFeatures.CustomTitle, Resource.Layout.WindowTitle); // http://www.londatiga.net/it/how-to-create-custom-window-title-in-android/
+            //Window.SetFeatureInt(WindowFeatures.CustomTitle, Resource.Layout.WindowTitle); // http://www.londatiga.net/it/how-to-create-custom-window-title-in-android/
 
 			speakers = MonkeySpace.Core.ConferenceManager.Speakers.Values.OrderBy ((s) => s.Name).ToList ();
 
@@ -38,6 +38,7 @@ namespace MonkeySpace
         private void refreshSpeakers()
         {
             list.Adapter = new SpeakersAdapter(this, speakers);
+            list.FastScrollEnabled = true;
         }
 
 		private void list_ItemClick(object sender, AdapterView.ItemClickEventArgs e)

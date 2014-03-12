@@ -5,6 +5,23 @@
     android:layout_height="fill_parent"
     android:background="#000000"
     android:textColor="#ffffff">
+    <LinearLayout
+        android:id="@+id/headerlayout"
+        android:layout_width="fill_parent"
+        android:layout_height="85px"
+        android:background="#0072c6">
+        <ImageView
+            android:id="@+id/header"
+            android:src="@drawable/Header"
+            android:layout_width="450px"
+            android:layout_height="85px"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:minHeight="85px"
+            android:paddingTop="5px"
+            android:paddingBottom="5px" />
+    </LinearLayout>
     <TextView
         android:text="@string/favorites"
         android:textSize="40dp"
