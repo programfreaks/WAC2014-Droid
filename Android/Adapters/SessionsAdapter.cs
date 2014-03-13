@@ -53,10 +53,8 @@ namespace MonkeySpace
 
         public override View GetView(int position, View convertView, ViewGroup parent)
         {
-            var view = (convertView
-                            ?? context.LayoutInflater.Inflate(
-                                    Resource.Layout.SessionsItem, parent, false)
-                        ) as LinearLayout;
+            var view = context.LayoutInflater.Inflate(Resource.Layout.SessionsItem, null) as LinearLayout;
+                //(convertView ?? context.LayoutInflater.Inflate(Resource.Layout.SessionsItem, parent, false)) as LinearLayout;
             //var row = sessions.ElementAt(position);
 
             var temp = rows.ElementAt(position);
