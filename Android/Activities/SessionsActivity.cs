@@ -12,7 +12,7 @@ using AzureConf;
 namespace MonkeySpace
 {
     //[Activity(Label = "Sessions")]
-    [Activity(Label = "WAC2014", MainLauncher = true, Icon = "@drawable/icon")]
+    [Activity(Label = "WAC2014", MainLauncher = false, Icon = "@drawable/icon")]
     public class SessionsActivity : BaseActivity
     {
         List<MonkeySpace.Core.Session> sessions;

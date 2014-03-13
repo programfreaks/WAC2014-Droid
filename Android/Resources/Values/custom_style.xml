@@ -1,5 +1,5 @@
 ﻿<resources>
-  <style name="CustomWindowTitleBackground">
+  <!--<style name="CustomWindowTitleBackground">
     <item name="android:background">@android:color/transparent</item>
   </style>
 
@@ -7,10 +7,10 @@
     <item name="android:windowTitleSize">50px</item>
     <item name="android:windowTitleBackgroundStyle">@style/CustomWindowTitleBackground</item>
     <item name="android:windowContentOverlay">@null</item>
-  </style>
+  </style>-->
 
-  <style name="Theme.Splash" parent="android:Theme">
-    <item name="android:windowBackground">@drawable/azurelogo</item>
+  <!--<style name="Theme.Splash" parent="android:Theme">
+    <item name="android:windowBackground">@drawable/SplashScreenImage</item>
     <item name="android:windowNoTitle">true</item>
-  </style>
+  </style>-->
 </resources>

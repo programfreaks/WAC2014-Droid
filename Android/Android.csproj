@@ -60,6 +60,7 @@
     <Compile Include="Activities\SessionsActivity.cs" />
     <Compile Include="Activities\SpeakerActivity.cs" />
     <Compile Include="Activities\SpeakersActivity.cs" />
+    <Compile Include="Activities\SplashActivity.cs" />
     <Compile Include="Adapters\FavouritesAdapter.cs" />
     <Compile Include="Adapters\SpeakersAdapter.cs" />
     <Compile Include="Adapters\HomeAdapter.cs" />
@@ -236,8 +237,18 @@
     <AndroidResource Include="Resources\drawable-xhdpi\icon.png" />
     <AndroidResource Include="Resources\drawable\missingprofile.png" />
     <AndroidResource Include="Resources\drawable\Header.png" />
+    <AndroidResource Include="Resources\values\Styles.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\drawable\SplashScreenImage.png" />
+    <AndroidResource Include="Resources\drawable\Splash.xml" />
+    <AndroidResource Include="Resources\drawable-hdpi\azurelogo.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\SessionSectionHeader.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
      Other similar extension points exist, see Microsoft.Common.targets.

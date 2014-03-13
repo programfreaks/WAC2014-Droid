@@ -4,6 +4,7 @@ using Android.App;
 using Android.Views;
 using Android.Widget;
 using AzureConf;
+using MonkeySpace.Core;
 
 
 namespace MonkeySpace
@@ -14,13 +15,40 @@ namespace MonkeySpace
 	/// </summary>
     public class SessionsAdapter : BaseAdapter
     {
-        private List<MonkeySpace.Core.Session> sessions;
+        private List<Session> sessions;
         private Activity context;
+
+        Dictionary<string, List<Session>> sessionsDictionary;
+        private readonly IList<object> rows;
 
         public SessionsAdapter(Activity context, List<MonkeySpace.Core.Session> sessions)
         {
             this.context = context;
             this.sessions = sessions;
+            this.sessionsDictionary = new Dictionary<string, List<Session>>();
+            foreach (var session in sessions)
+            {
+                if (sessionsDictionary.ContainsKey(session.Location))
+                {
+                    sessionsDictionary[session.Location].Add(session);
+                }
+                else
+                {
+                    var tempSesions = new List<Session>();
+                    tempSesions.Add(session);
+                    sessionsDictionary.Add(session.Location, tempSesions);
+                }
+            }
+
+            rows = new List<object>();
+            foreach (var section in sessionsDictionary.Keys)
+            {
+                rows.Add(section);
+                foreach (var session in sessionsDictionary[section])
+                {
+                    rows.Add(session);
+                }
+            }
         }
 
         public override View GetView(int position, View convertView, ViewGroup parent)
@@ -29,17 +57,31 @@ namespace MonkeySpace
                             ?? context.LayoutInflater.Inflate(
                                     Resource.Layout.SessionsItem, parent, false)
                         ) as LinearLayout;
-            var row = sessions.ElementAt(position);
+            //var row = sessions.ElementAt(position);
 
-            view.FindViewById<TextView>(Resource.Id.Time).Text = row.DateTimeDisplay;
+            var temp = rows.ElementAt(position);
 
-            view.FindViewById<TextView>(Resource.Id.Title).Text = row.Title;
+            if (temp is Session)
+            {
+                var row = temp as Session;
+                view.FindViewById<TextView>(Resource.Id.Time).Text = row.DateTimeDisplay;
 
-            if (row.Location == "")
-                view.FindViewById<TextView>(Resource.Id.Room).Text = row.GetSpeakerList ();
-            else
-				view.FindViewById<TextView>(Resource.Id.Room).Text = row.LocationDisplay + "; " + row.GetSpeakerList();
-            
+                view.FindViewById<TextView>(Resource.Id.Title).Text = row.Title;
+
+                if (row.Location == "")
+                    view.FindViewById<TextView>(Resource.Id.Room).Text = row.GetSpeakerList();
+                else
+                    view.FindViewById<TextView>(Resource.Id.Room).Text = row.LocationDisplay + "; " +
+                                                                         row.GetSpeakerList();
+            }
+            else if(temp is string)
+            {
+                view = context.LayoutInflater.Inflate(Resource.Layout.SessionSectionHeader, null) as LinearLayout;
+                view.Clickable = false;
+                view.LongClickable = false;
+                view.SetOnClickListener(null);
+                view.FindViewById<TextView>(Resource.Id.sectionHeader).Text = (string)temp;
+            }
 
             return view;
         }

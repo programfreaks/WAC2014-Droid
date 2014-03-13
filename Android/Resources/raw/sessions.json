@@ -27,7 +27,7 @@
                 "name": "Yousef Khalidi",
                 "twitterHandle": "",
                 "tagline": "DISTINGUISHED ENGINEER,Microsoft",
-                "bio": "",
+                "bio": "Yousef Khalidi is a seasoned technologist with a proven record of over 24 years' experience shipping innovative software and hardware platforms. Yousef is currently a Distinguished Engineer at Microsoft, working on Windows Azure.",
                 "headshotUrl": "/images/speakers/khiladi.jpg"
             }
         ],
@@ -228,7 +228,7 @@
             }
         ],
         "begins": "2014-03-20T12:00:00.0000000+05:30",
-        "ends": "2014-03-20T12:30:00.0000000+05:30",
+        "ends": "2014-03-20T12:50:00.0000000+05:30",
         "location": "FLEXIBLE(Deploy&Manage)"
     },
     {
@@ -268,7 +268,7 @@
                 "twitterHandle": "",
                 "tagline": "MTC-Technical Director, Microsoft India",
                 "bio": "Govind works at MTC in Bangalore helping customers adopt Azure and Data platform to address business challenges.  His area of expertise lies in developing applications and finding/fixing bottlenecks. He is still a journeyman and believes that he can only share what he learns/understands and that part is infinitesimally small.  Data is what excites him and he has worked with customers across Reqular/NoSql stores and the BigData ones.  He is an occasional blogger at http://govindkanshi.wordpress.com",
-                "headshotUrl": "/images/speakers/Govind.png"
+                "headshotUrl": "/images/speakers/Govind.jpg"
             }
         ],
         "begins": "2014-03-20T14:00:00.0000000+05:30",
@@ -340,7 +340,7 @@
     {
         "id": 17,
         "title": "Nodes, relationships, and freeform data: Exploring OSS graph and document databases in Windows Azure",
-        "abstract": "",
+        "abstract": "We’re seeing a paradigm shift in database use, moving away from a one-size-fits-all model, and into a multi-database-for-multi-need model known as polyglot persistence. The main reason? Companies are discovering that traditional relational models for organizing data are not always an ideal fit for the challenges introduced by use cases the app challenges in today’s world of connect apps, such as deep level social network relationships or schema-less data ingested from heterogeneous sources. This session takes a look at two popular NoSQL variants for tackling these situations: documents and graphs. This demo-heavy session will explore the storage and searching highlights of MongoDB and Neo4j, their benefits when used side-by-side with SQL databases, and the options for running these powerful database engines in Windows Azure.",
         "speakers": [
             {
                 "id": 51,
@@ -384,7 +384,7 @@
     {
         "id": 19,
         "title": "Hybrid Cloud Storage: StorSimple and Windows Azure",
-        "abstract": "his session will provide an overview of the StorSimple and Windows Azure hybrid cloud storage solution. The focus will be on the market drivers for moving to a hybrid cloud storage, how StorSimple and Windows Azure solve these problems and the key technical attributes of the product that make it unique. The final section will discuss the proper deployment scenarios for a StorSimple solution and include a hands-on demo of the product. ",
+        "abstract": "This session will provide an overview of the StorSimple and Windows Azure hybrid cloud storage solution. The focus will be on the market drivers for moving to a hybrid cloud storage, how StorSimple and Windows Azure solve these problems and the key technical attributes of the product that make it unique. The final section will discuss the proper deployment scenarios for a StorSimple solution and include a hands-on demo of the product. ",
         "speakers": [
             {
                 "id": 13,
@@ -421,8 +421,8 @@
                 "headshotUrl": "/images/speakers/Nayak.jpg"
             }
         ],
-        "begins": "2014-03-20T15:00:00.0000000+05:30",
-        "ends": "2014-03-20T15:50:00.0000000+05:30",
+        "begins": "2014-03-20T16:10:00.0000000+05:30",
+        "ends": "2014-03-20T17:00:00.0000000+05:30",
         "location": "HOL"
     },
     {
@@ -439,8 +439,8 @@
                 "headshotUrl": "/images/speakers/muhammadNasiruddin.jpg"
             }
         ],
-        "begins": "2014-03-21T16:10:00.0000000+05:30",
-        "ends": "2014-03-21T17:00:00.0000000+05:30",
+        "begins": "2014-03-20T16:10:00.0000000+05:30",
+        "ends": "2014-03-20T17:00:00.0000000+05:30",
         "location": "OPEN"
     },
     {
@@ -457,8 +457,8 @@
                 "headshotUrl": "/images/speakers/Puneet.jpg"
             }
         ],
-        "begins": "2014-03-21T16:10:00.0000000+05:30",
-        "ends": "2014-03-21T17:00:00.0000000+05:30",
+        "begins": "2014-03-20T16:10:00.0000000+05:30",
+        "ends": "2014-03-20T17:00:00.0000000+05:30",
         "location": "BROAD(Develop)"
     },
     {
@@ -475,8 +475,8 @@
                 "headshotUrl": "/images/speakers/nRaja.jpg"
             }
         ],
-        "begins": "2014-03-21T16:10:00.0000000+05:30",
-        "ends": "2014-03-21T17:00:00.0000000+05:30",
+        "begins": "2014-03-20T16:10:00.0000000+05:30",
+        "ends": "2014-03-20T17:00:00.0000000+05:30",
         "location": "FLEXIBLE(Deploy&Manage)"
     },
     {
@@ -501,8 +501,8 @@
                 "headshotUrl": "/images/speakers/Angshuman.jpg"
             }
         ],
-        "begins": "2014-03-21T16:10:00.0000000+05:30",
-        "ends": "2014-03-21T17:00:00.0000000+05:30",
+        "begins": "2014-03-20T16:10:00.0000000+05:30",
+        "ends": "2014-03-20T17:00:00.0000000+05:30",
         "location": "HOL"
     },
     {
@@ -526,7 +526,7 @@
     {
         "id": 26,
         "title": "Designing Applications for Scalability",
-        "abstract": "",
+        "abstract": "Cloud platforms are designed to handle high volumes of transactions and data by means of scaling out, and Windows Azure is no different. Understanding the limits of the scale units specific for each of the core platform services is critical for delivering robust solutions that, by design, avoid some common contention points in a scaled-out architecture. This session will first present the scale unit limits for Compute, Cache, Storage, and Database, and then share patterns and best practices derived from the implementation of some of the largest Windows Azure deployments world-wide. This session is mostly aimed at solution architects and developers who take active role in the A&D of the software they build.",
         "speakers": [
             {
                 "id": 10,
@@ -573,8 +573,8 @@
                 "headshotUrl": ""
             }
         ],
-        "begins": "2014-03-21T11:00:00.0000000+05:30",
-        "ends": "2014-03-21T11:50:00.0000000+05:30",
+        "begins": "2014-03-20T11:00:00.0000000+05:30",
+        "ends": "2014-03-20T11:50:00.0000000+05:30",
         "location": "HOL"
     },
     {
@@ -749,7 +749,7 @@
                 "headshotUrl": "/images/speakers/Sunil.jpg"
             }
         ],
-        "begins": "2014-03-21T14:00:00.0000000+05:30",
+        "begins": "2014-03-21T14:10:00.0000000+05:30",
         "ends": "2014-03-21T14:50:00.0000000+05:30",
         "location": "HOL"
     },

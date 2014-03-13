@@ -8,14 +8,23 @@
   <string name="developedby">
     <a href="http://www.programfreaks.com">ProgramFreaks</a>
   </string>
+  <string name="developers">developed by:</string>
   <string name="programfreaksurl">http://www.programfreaks.com</string>
   <string name="anubhav">Anubhav Ranjan</string>
   <string name="kirtisagar">Kirtisagar Malshet</string>
-  <string name="anubhavlinkedin">http://www.linkedin.com/in/ranjananubhav</string>
-  <string name="anubhavtwitter">http://www.twitter.com/anubhavr05</string>
+  <string name="anubhavlinkedin">
+    <a href="http://www.linkedin.com/in/ranjananubhav">Anubhav Ranjan</a>
+  </string>
+  <string name="anubhavtwitter">
+    <a href="http://www.twitter.com/anubhavr05">@anubhavr05</a>
+  </string>
   <string name="anubhavtwittertext">%40anubhavr05</string>
-  <string name="kirtisagarlinkedin">http://www.linkedin.com/in/kirtisagar</string>
-  <string name="kirtisagartwitter">http://www.twitter.com/kirtisagar</string>
+  <string name="kirtisagarlinkedin">
+    <a href="http://www.linkedin.com/in/kirtisagar">Kirtisagar Malshet</a>
+  </string>
+  <string name="kirtisagartwitter">
+    <a href="http://www.twitter.com/kirtisagar">@kirtisagar</a>
+  </string>
   <string name="kirtisagartwittertext">%40kirtisagar</string>
   <string name="designation">designation</string>
   <string name="favorites">favorites</string>
