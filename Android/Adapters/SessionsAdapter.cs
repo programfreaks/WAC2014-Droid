@@ -26,11 +26,14 @@ namespace MonkeySpace
             this.context = context;
             this.sessions = sessions;
             this.sessionsDictionary = new Dictionary<string, List<Session>>();
+            sessionsDictionary.Add("Keynote", new List<Session>());
             sessionsDictionary.Add("OPEN", new List<Session>());
             sessionsDictionary.Add("BROAD(Develop)", new List<Session>());
-            sessionsDictionary.Add("FLEXIBLE(Deploy&Manage)", new List<Session>());
+            sessionsDictionary.Add("FLEXIBLE(Deploy&Manage)", new List<Session>()); 
+            sessionsDictionary.Add("Start-up Conclave", new List<Session>());
+            sessionsDictionary.Add("MIC Champs Connect", new List<Session>());
             sessionsDictionary.Add("HOL", new List<Session>());
-            sessionsDictionary.Add("Keynote", new List<Session>());
+            
             //sessionsDictionary.Add("OPEN", new List<Session>());
             foreach (var session in sessions)
             {
