@@ -47,7 +47,7 @@
         android:paddingLeft="10dip"
         android:orientation="horizontal">
         <TextView
-            android:text="@string/by"
+             android:text="@string/developedby"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/textView2"
@@ -56,7 +56,7 @@
             android:textSize="15dip"
             android:layout_weight="1" />
         <TextView
-            android:text="@string/developedby"
+           
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/textView2"
@@ -82,17 +82,16 @@
             android:textColor="@color/white"
             android:textSize="15dip"
             android:layout_weight="1" />
-        <TextView
-            android:text="@string/anubhavlinkedin"
+			<TextView
+           
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/textView2"
-            android:textColorLink="@color/azure"
-            android:paddingLeft="40dip"
+            android:paddingLeft="0dip"
+            android:textColor="@color/white"
             android:textSize="15dip"
-            android:layout_weight="1"
-            android:autoLink="web"
-            android:linksClickable="true" />
+            android:layout_weight="1" />
+       
     </LinearLayout>
     <LinearLayout
         android:layout_width="fill_parent"
@@ -102,15 +101,80 @@
         android:paddingLeft="10dip"
         android:orientation="horizontal">
         <TextView
+            android:text="@string/anubhav"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/textView2"
-            android:paddingLeft="0dip"
-            android:textColor="@color/white"
+            android:textColorLink="@color/azure"
+            android:paddingLeft="40dip"
             android:textSize="15dip"
-            android:layout_weight="1" />
+            android:layout_weight="1"
+            android:autoLink="web"
+            android:linksClickable="true" />
         <TextView
-            android:text="@string/kirtisagarlinkedin"
+            android:text="@string/kirtisagar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView2"
+            android:textColorLink="@color/azure"
+            android:paddingLeft="40dip"
+            android:textSize="15dip"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:linksClickable="true"
+            android:autoLink="web" />
+    </LinearLayout>
+	<LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#000000"
+        android:textColor="#ffffff"
+        android:paddingLeft="10dip"
+        android:orientation="horizontal">
+        <TextView
+            android:text="@string/anubhavtwittertext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView2"
+            android:textColorLink="@color/azure"
+            android:paddingLeft="40dip"
+            android:textSize="15dip"
+            android:layout_weight="1"
+            android:autoLink="web"
+            android:linksClickable="true" />
+        <TextView
+            android:text="@string/kirtisagartwittertext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView2"
+            android:textColorLink="@color/azure"
+            android:paddingLeft="40dip"
+            android:textSize="15dip"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:linksClickable="true"
+            android:autoLink="web" />
+    </LinearLayout>
+	<LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#000000"
+        android:textColor="#ffffff"
+        android:paddingLeft="10dip"
+        android:orientation="horizontal">
+        <TextView
+            android:text="@string/support"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView2"
+            android:textColorLink="@color/azure"
+            android:paddingLeft="40dip"
+            android:textSize="15dip"
+            android:layout_weight="1"
+            android:autoLink="web"
+            android:linksClickable="true" />
+        <TextView
+            android:text="@string/programfreakstwittertext"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/textView2"
