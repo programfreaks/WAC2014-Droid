@@ -45,28 +45,148 @@
         android:background="#000000"
         android:textColor="#ffffff"
         android:paddingLeft="10dip"
+        android:paddingBottom="10dip"
         android:orientation="horizontal">
         <TextView
-             android:text="@string/developedby"
+            android:text="@string/by"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/textView2"
             android:paddingLeft="0dip"
             android:textColor="@color/white"
             android:textSize="15dip"
-            android:layout_weight="1" />
+            android:layout_weight="1"
+            android:maxWidth="10dip" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#000000"
+        android:textColor="#ffffff"
+        android:paddingLeft="10dip"
+        android:orientation="horizontal">
         <TextView
-           
+            android:text="Publisher:             Microsoft"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/textView2"
-            android:textColorLink="@color/azure"
-            android:paddingLeft="20dip"
+            android:paddingLeft="0dip"
+            android:textColor="@color/white"
             android:textSize="15dip"
             android:layout_weight="1"
-            android:autoLink="web" />
+            android:maxWidth="10dip" />
     </LinearLayout>
     <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#000000"
+        android:textColor="#ffffff"
+        android:paddingLeft="10dip"
+        android:paddingBottom="5dip"
+        android:orientation="horizontal">
+        <TextView
+            android:text="Version:                 1.0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView2"
+            android:paddingLeft="0dip"
+            android:textColor="@color/white"
+            android:textSize="15dip"
+            android:layout_weight="1"
+            android:maxWidth="10dip" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#000000"
+        android:textColor="#ffffff"
+        android:paddingLeft="10dip"
+        android:orientation="horizontal">
+        <TextView
+            android:text="Developed by:      Anubhav Ranjan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView2"
+            android:paddingLeft="0dip"
+            android:textColor="@color/white"
+            android:textSize="15dip"
+            android:layout_weight="1"
+            android:maxWidth="10dip" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#000000"
+        android:textColor="#ffffff"
+        android:paddingLeft="10dip"
+        android:orientation="horizontal">
+        <TextView
+            android:text="                                 @anubhavr05"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView2"
+            android:paddingLeft="0dip"
+            android:textColor="@color/white"
+            android:textSize="15dip"
+            android:layout_weight="1"
+            android:maxWidth="10dip"
+            android:paddingBottom="5dip" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#000000"
+        android:textColor="#ffffff"
+        android:paddingLeft="10dip"
+        android:orientation="horizontal">
+        <TextView
+            android:text="                                 Kirtisagar Malshet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView2"
+            android:paddingLeft="0dip"
+            android:textColor="@color/white"
+            android:textSize="15dip"
+            android:layout_weight="1"
+            android:maxWidth="10dip" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#000000"
+        android:textColor="#ffffff"
+        android:paddingLeft="10dip"
+        android:orientation="horizontal">
+        <TextView
+            android:text="                                 @kirtisagar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView2"
+            android:paddingLeft="0dip"
+            android:textColor="@color/white"
+            android:textSize="15dip"
+            android:layout_weight="1"
+            android:maxWidth="10dip" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#000000"
+        android:textColor="#ffffff"
+        android:paddingLeft="10dip"
+        android:orientation="horizontal">
+        <TextView
+            android:text="Support:                @programfreaks"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView2"
+            android:paddingLeft="0dip"
+            android:textColor="@color/white"
+            android:textSize="15dip"
+            android:layout_weight="1"
+            android:maxWidth="10dip" />
+    </LinearLayout>
+<!--<LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:background="#000000"
@@ -82,8 +202,7 @@
             android:textColor="@color/white"
             android:textSize="15dip"
             android:layout_weight="1" />
-			<TextView
-           
+        <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/textView2"
@@ -91,7 +210,6 @@
             android:textColor="@color/white"
             android:textSize="15dip"
             android:layout_weight="1" />
-       
     </LinearLayout>
     <LinearLayout
         android:layout_width="fill_parent"
@@ -124,7 +242,7 @@
             android:linksClickable="true"
             android:autoLink="web" />
     </LinearLayout>
-	<LinearLayout
+    <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:background="#000000"
@@ -155,7 +273,7 @@
             android:linksClickable="true"
             android:autoLink="web" />
     </LinearLayout>
-	<LinearLayout
+    <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:background="#000000"
@@ -208,7 +326,7 @@
         android:id="@+id/textView3"
         android:textColor="@color/white"
         android:padding="10dip"
-        android:layout_marginTop="20dip" />
+        android:layout_marginTop="20dip" />-->
     <ListView
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"

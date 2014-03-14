@@ -4,7 +4,7 @@
   <string name="speakers">speakers</string>
   <string name="sessions">sessions</string>
   <string name="name">name</string>
-  <string name="by">by </string>
+  <string name="by">by ProgramFreaks </string>
   <string name="developedby">
     <a href="http://www.programfreaks.com">ProgramFreaks</a>
   </string>
@@ -18,13 +18,13 @@
   <string name="anubhavtwitter">
     <a href="http://www.twitter.com/anubhavr05">@anubhavr05</a>
   </string>
-  <string name="anubhavtwittertext">%40anubhavr05</string>
+  <string name="anubhavtwittertext">\@anubhavr05</string>
   <string name="kirtisagarlinkedin">http://www.linkedin.com/in/kirtisagar
   </string>
   <string name="kirtisagartwitter">
     <a href="http://www.twitter.com/kirtisagar">@kirtisagar</a>
   </string>
-  <string name="kirtisagartwittertext">%40kirtisagar</string>
+  <string name="kirtisagartwittertext">\@kirtisagar</string>
   <string name="designation">designation</string>
   <string name="favorites">favorites</string>
   <string name="sessiondetail">session detail</string>
@@ -36,5 +36,5 @@
   <string name="aboutDescription">Explore limitless possibilities and vast opportunities made possible by Windows Azure, at India\'s largest cloud conference. It is the perfect platform to meet partners, share insights, and discover growth opportunities.</string>
   <string name="aboutMessage">Please select an option from the menu to continue.</string>
    <string name="support">Support:</string>
-    <string name="programfreakstwittertext">%40programfreaks</string>
+    <string name="programfreakstwittertext">\@programfreaks</string>
 </resources>
