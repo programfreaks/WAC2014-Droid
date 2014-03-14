@@ -50,23 +50,31 @@ namespace MonkeySpace.Core
 					
 					Sessions.Add(session.Id, session);
 					Console.WriteLine ("Session: " + session.Title);
-					
-					var jsonSpeakers = jsonSession["speakers"];// as JsonValue;
-					
-					for (var k = 0; k < jsonSpeakers.Count; k++) {
-						var jsonSpeaker = jsonSpeakers[k]; // as JsonValue;
-						var speaker = new Speaker(jsonSpeaker);
-						
-						if (!Speakers.ContainsKey (speaker.Id)) {
-							Speakers.Add (speaker.Id, speaker);
-						} else {
-							speaker = Speakers[speaker.Id];
-						}
-						speaker.Sessions.Add (session);
-						session.Speakers.Add (speaker);
-						
-						Console.WriteLine ("Speaker: " + speaker.Name);
-					}
+
+				    if (jsonSession.ContainsKey("speakers"))
+				    {
+
+				        var jsonSpeakers = jsonSession["speakers"]; // as JsonValue;
+
+				        for (var k = 0; k < jsonSpeakers.Count; k++)
+				        {
+				            var jsonSpeaker = jsonSpeakers[k]; // as JsonValue;
+				            var speaker = new Speaker(jsonSpeaker);
+
+				            if (!Speakers.ContainsKey(speaker.Id))
+				            {
+				                Speakers.Add(speaker.Id, speaker);
+				            }
+				            else
+				            {
+				                speaker = Speakers[speaker.Id];
+				            }
+				            speaker.Sessions.Add(session);
+				            session.Speakers.Add(speaker);
+
+				            Console.WriteLine("Speaker: " + speaker.Name);
+				        }
+				    }
 				}
 			}
 #endif

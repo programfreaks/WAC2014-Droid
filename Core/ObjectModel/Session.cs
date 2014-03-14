@@ -33,8 +33,11 @@ namespace MonkeySpace.Core
 
 			var begins = json["begins"].ToString().Trim ('"').Substring (0, 19).Replace ("T", " ");
 			Begins = DateTime.Parse (begins);
-			var ends = json["ends"].ToString ().Trim ('"').Substring (0, 19).Replace ("T", " ");
-			Ends = DateTime.Parse (ends, System.Globalization.CultureInfo.InvariantCulture);
+		    if (json.ContainsKey("ends"))
+		    {
+		        var ends = json["ends"].ToString().Trim('"').Substring(0, 19).Replace("T", " ");
+		        Ends = DateTime.Parse(ends, System.Globalization.CultureInfo.InvariantCulture);
+		    }
 		}
 #endif
 		public int Id { get; set; }
