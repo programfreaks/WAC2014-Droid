@@ -35,4 +35,6 @@
   <string name="winazuretagline">The future lies in the cloud. Accelerate with Windows Azure.</string>
   <string name="aboutDescription">Explore limitless possibilities and vast opportunities made possible by Windows Azure, at India\'s largest cloud conference. It is the perfect platform to meet partners, share insights, and discover growth opportunities.</string>
   <string name="aboutMessage">Please select an option from the menu to continue.</string>
+   <string name="support">Support:</string>
+    <string name="programfreakstwittertext">%40programfreaks</string>
 </resources>
