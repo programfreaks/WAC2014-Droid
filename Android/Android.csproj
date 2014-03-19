@@ -172,6 +172,11 @@
     <AndroidAsset Include="Assets\speakers\takayukihoshino.png" />
     <AndroidAsset Include="Assets\speakers\vibhorkapoor.jpg" />
     <AndroidAsset Include="Assets\speakers\yousefkhalidi.jpg" />
+    <AndroidAsset Include="Assets\speakers\manasbiswas.jpg" />
+    <AndroidAsset Include="Assets\speakers\mukundmohan.jpg" />
+    <AndroidAsset Include="Assets\speakers\normansequeira.jpg" />
+    <AndroidAsset Include="Assets\speakers\rajinishmenon.jpg" />
+    <AndroidAsset Include="Assets\speakers\sandeepalur.jpg" />
     <Content Include="Properties\AndroidManifest.xml">
       <SubType>Designer</SubType>
     </Content>
@@ -182,7 +187,6 @@
     <AndroidResource Include="Resources\values\Colors.xml" />
     <AndroidResource Include="Resources\drawable\azurelogo.png" />
     <AndroidResource Include="Resources\drawable\windows_logo.png" />
-    <AndroidResource Include="Resources\drawable\icon.png" />
     <AndroidAsset Include="Assets\speakers\Abhishek.jpg" />
     <AndroidAsset Include="Assets\speakers\Angshuman.jpg" />
     <AndroidAsset Include="Assets\speakers\anirudhSingh.jpg" />
@@ -243,6 +247,7 @@
     <AndroidResource Include="Resources\drawable\SplashScreenImage.png" />
     <AndroidResource Include="Resources\drawable\Splash.xml" />
     <AndroidResource Include="Resources\drawable-hdpi\azurelogo.png" />
+    <AndroidResource Include="Resources\drawable\icon.png" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\layout\SessionSectionHeader.axml">

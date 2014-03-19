@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="internalOnly" package="com.confapp.AzureConf" android:versionName="1.2" android:versionCode="3">
-	<application android:label="AWC2014" android:icon="@drawable/icon"></application>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="internalOnly" package="com.confapp.AzureConf" android:versionName="1.03" android:versionCode="3">
+	<application android:label="WAC2014" android:icon="@drawable/icon"></application>
 	<uses-sdk android:minSdkVersion="8" android:targetSdkVersion="8" />
 </manifest>
